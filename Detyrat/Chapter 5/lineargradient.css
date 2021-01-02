@@ -1,0 +1,17 @@
+  .horizontal{
+			width: 200px;
+			height: 200px;
+			border: 3px solid navy;
+			padding: 5px 20px;
+			text-align: center;
+			background: -webkit-gradient(
+				linear, center top, center bottom,
+				color-stop 1 (15%,white), colo (50%,lightsteelblue)
+				color-stop (75% , navy ) ); 
+			background: -moz-linear-gradient (top center, white 15%, lightsteelblue 50%,navy 75%);
+			background: linear-gradient(to bottom,white 15%,lightsteelblue 50%,navy 75%);
+			float: left;
+			margin-right: 15%
+
+		}
+a e heki po
