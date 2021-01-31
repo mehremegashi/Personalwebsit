@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>About</title>
-	<!-- this is the connecting with the file for design with css -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 
-		
-	</style>
-
-</head>                          
+</head>
 <body>
-	<!--here is the navigation list-->
-	<nav>
-	<!--a image of the logo-->
-	<img src="Logo.jpg" width="10%" height="10%" alt="Logo" class="center">
+  <div>
+    <img src="Logo.jpg" width="10%" height="10%" alt="Logo" class="center">
+    <img src="logo.png" width="20%" height="20%" alt="logo" class="leftcenter">
+  </div>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active" style="text-align: center;">Home</a>
+  <a href="about.html" style="text-align: center;">About</a>
+  <a href="favorite.html" style="text-align: center;">Favorite</a>
+  <div class="dropdown">
+    <button class="dropbtn" style="text-align: center;">Assignments
+      <i class="fa fa-caret-down"></i>
+    </button>
+   <div class="dropdown-content">
+      <a href="assignments.html">Homeworks</a>
+       </div>
+  </div> 
+  <a href="contact.html"style="text-align: center;">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 
-<p id=".center-text">
-	<a  href="./index.html">Home</a>
-	<a id=".center-text" href="./about.html">About</a>
-	<a id=".center-text" href="./assignments.html">Assignments</a>
-	<a id=".center-text" href="./favorite.html">Favorites</a>
- 	<a id=".center-text" href="./contact.html">Contact</a>
- 	
-</p>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</ul>
 	<!--here begins the short description of me with paragraphs-->
-	<h1 class="anchor" align="left">⚓</h1>
+	<h1 class="anchor" >⚓</h1>
 	<header ><p>* * *</p>
 		<p id="lifetext" class="solid"><i>Hello everyone my name is <b> Mehreme Gashi</b>. All my life I`ve lived in Fushe Kosova. I finished the primary and high school there.<br>
 		While in high school I`ve been part of many organizations and projects, different from another.<br>
 		I liked many interesting events and helped on their organizations. I`ve also helped on many UNICEF-s projects here in Kosovo<br>
 		Being involved on good and educational events has helped me evolve and find myself, find who i am and who i want to be.<br>I`ve always loved an openminded society, so even in my early age i tried my best to spread the news for something nice and be part of their joy<br>I am now a first year student at Universum college, I`m studying computer sciences. This field of study is a very interesting but also very hard.<br>
-		I`m almost 18 years old. I like to read, write and watch movies.<br>
+		I`m 18 years old. I like to read, write and watch movies.<br>
 		Im into poetry, i think its such a great way to express your thoughts and feelings<br></p>
 
 
@@ -39,11 +54,14 @@
 		<p id="middleschool"> I finished primary and middle school in Mihal Grameno School, Fushe Kosove</p>
 		<p id="highschool">I finished the high school in Hivzi Sulejmani Gymnasium, Fushe Kosove</p>
 		<!--i put here image of my  primary school object-->
-		<p class="img1">
-		<img src="https://kallxo.com/wp-content/uploads/2016/09/Mihal-Grameno-Fushe-Kosove-e1474965438199.jpg" width="20%" height="25%"  > </p>
+		
+		<div class="schools">
+			<p >
+		<img style="float: left; margin-left: 10%;" src="https://kallxo.com/wp-content/uploads/2016/09/Mihal-Grameno-Fushe-Kosove-e1474965438199.jpg" width="20%" height="105%"  > </p>
 		<!--a short description of the image from below in a paragraph-->
-		<p class="img2">
-			<img src="https://reporteri.net/wp-content/uploads/2020/09/71_big.jpg" width="20%" height="25%"></p>
+		<p >
+			<img style="float: right; margin-right: 10%;" src="https://reporteri.net/wp-content/uploads/2020/09/71_big.jpg" width="20%" height="1%"></p>
+		</div>
 
 
 		<!--i put here image of my high school object-->
@@ -56,63 +74,63 @@
 			<div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numbertext">1 / 10
+  <div class="numbertext">
   </div>
-  <img src="malet.jpg" class="image_center">
+  <img src="malet.jpg" style="width: 100%;">
   <div class="text">Malet</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">2 / 10</div>
-  <img src="wood.jpg" class="image_center">
+  <div class="numbertext"></div>
+  <img src="wood.jpg" style="width: 100%;">
   <div class="text">Pylli</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">3 / 10</div>
-  <img src="woods.jpg" class="image_center">
+  <div class="numbertext"></div>
+  <img src="woods.jpg" style="width: 100%;">
   <div class="text">Pylli</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">4 / 10</div>
-  <img src="sky.jpg" class="image_center">
-  <div class="text">Qjelli</div>
+  <div class="numbertext"></div>
+  <img src="sky.jpg" style="width: 100%;">
+  <div class="text">Qielli</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">5 / 10</div>
-  <img src="skyy.jpg" class="image_center">
-  <div class="text">Qjelli</div>
+  <div class="numbertext"></div>
+  <img src="skyy.jpg" style="width: 100%;">
+  <div class="text">Qielli</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">6 / 10</div>
-  <img src="ssky.jpg" class="image_center">
-  <div class="text">Qjelli</div>
+  <div class="numbertext"></div>
+  <img src="ssky.jpg" style="width: 100%;">
+  <div class="text">Qielli</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">7 / 10</div>
-  <img src="sunset.jpg" class="image_center">
-  <div class="text">Perendimi i djellit</div>
+  <div class="numbertext"></div>
+  <img src="sunset.jpg" style="width: 100%;">
+  <div class="text">Perendimi i diellit</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">8 / 10</div>
-  <img src="sky&train.jpg" class="image_center">
-  <div class="text">Teleferiku</div>
+  <div class="numbertext"></div>
+  <img src="sky&train.jpg" style="width: 100%;">
+  <div class="text">.</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">9 / 10</div>
-  <img src="sunsett.jpg" class="image_center">
-  <div class="text">Perendimi i djellit</div>
+  <div class="numbertext"></div>
+  <img src="sunsett.jpg" style="width: 100%;">
+  <div class="text">Perendimi i diellit</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">10 / 10</div>
-  <img src="snow.jpg" class="image_center"	>
+  <div class="numbertext"></div>
+  <img src="snow.jpg" style="width: 100%;"	>
   <div class="text">Bora</div>
 </div>
 
@@ -217,6 +235,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+
+</body>
+</html>
 
 </body>
 </html>

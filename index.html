@@ -6,25 +6,45 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>           
 <body>
-	<!--here is the navigation list-->
-<nav>
-	<!--a image of the logo-->
+<div>
 	<img src="Logo.jpg" width="10%" height="10%" alt="Logo" class="center">
+	<img src="logo.png" width="20%" height="20%" alt="logo" class="leftcenter">
+</div>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active" style="text-align: center;">Home</a>
+  <a href="about.html" style="text-align: center;">About</a>
+  <a href="favorite.html" style="text-align: center;">Favorite</a>
+  <div class="dropdown">
+    <button class="dropbtn" style="text-align: center;">Assignments
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="assignments.html">Homeworks</a>
+      
+    </div>
+  </div> 
+  <a href="contact.html"style="text-align: center;">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 
-<p id=".center-text">
-	<a  href="./index.html">Home</a>
-	<a id=".center-text" href="./about.html">About</a>
-	<a id=".center-text" href="./assignments.html">Assignments</a>
-	<a id=".center-text" href="./favorite.html">Favorites</a>
- 	<a id=".center-text" href="./contact.html">Contact</a>
- 	
-</p>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
  
 	</nav>
 	<!--the header and some paragraphs telling smth for me--> 
 	<h1 class="textcenter">Mehreme Gashi</h1>
 	<header class="textcenter">  <i>A first year computer science student <em> </header> 
- 		<p> 17 years old</p>
+ 		<p> 18 years old</p>
  		<p> From Fushe Kosova</p>
  		<p>A movie`s freak</p>
  		<p></p>

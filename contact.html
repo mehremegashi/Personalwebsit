@@ -8,20 +8,38 @@
 	<link rel="stylesheet" type="text/css" href="style.css">   
 </head>
 <body>
-	<!--here is the navigation list-->
-	<nav>
-		<!--a image of the logo-->
-			<img src="Logo.jpg" width="10%" height="10%" alt="Logo" class="center">
+	<div>
+		<img src="Logo.jpg" width="10%" height="10%" alt="Logo" class="center">
+		<img src="logo.png" width="20%" height="20%" alt="logo" class="leftcenter">
+	</div>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active" style="text-align: center;">Home</a>
+  <a href="about.html" style="text-align: center;">About</a>
+  <a href="favorite.html" style="text-align: center;">Favorite</a>
+  <div class="dropdown">
+    <button class="dropbtn" style="text-align: center;">Assignments
+      <i class="fa fa-caret-down"></i>
+    </button>
+  <div class="dropdown-content">
+      <a href="assignments.html">Homeworks</a>
+       </div>
+  </div> 
+  <a href="contact.html"style="text-align: center;">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 
 
 
-		<a href="./index.html">Home</a>
-		<a href="./about.html">About</a>
-		<a href="./assignments.html">Assignments</a>
-		<a href="./contact.html">Contact</a>
-	
-
-	</nav>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 	<p>This is where you can contact me!</p>
 	<!--here i have an unordered list with 3 links listed down below-->
 	<div class="fcf-body">
@@ -34,7 +52,7 @@
 
 		<form method="post" action="http://www.deitel.com ">
 
-			<input type="hidden" name="recipient" value="as49305@universum-ks.org">
+			<input type="hidden" name="recipient" value="mg49217@universum-ks.org">
 			<input type="hidden" name="subject" value="Feedback">
 			<input type="hidden" name="redirect" value="mine.html">
 			<p><label>Name:
@@ -72,13 +90,13 @@
 			<!--and checkboxes is that only one radio button -->
 			<!-- in a group can be selected-->
 			<p>
-				<strong>How did you get to our site?:</strong><br>
+				<strong>How did you get to my site?:</strong><br>
 
 				<label>Search engine
 					<input name="howtosite" type="radio" value="search engine"></label>
 				<label>Links from another site
 					<input name="howtosite" type="radio" value="link"></label>
-				<label>Deitel.com Web site
+				<label>Social Media
 					<input name="howtosite" type="radio" value="dritrl.com"></label>
 				<label>Reference in a book
 					<input name="howtosite" type="radio" value="book"></label>
